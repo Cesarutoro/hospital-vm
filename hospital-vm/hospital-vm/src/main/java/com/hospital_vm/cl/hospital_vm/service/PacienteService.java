@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.hospital_vm.cl.hospital_vm.model.Paciente;
-import com.hospital_vm.cl.hospital_vm.repository.PacienteRepository;
+import com.hospital_vm.cl.hospital_vm.repository.pacienteRepository;
 
 import jakarta.transaction.Transactional;
 
@@ -15,7 +15,7 @@ import jakarta.transaction.Transactional;
 public class PacienteService {
 
     @Autowired
-    private PacienteRepository pacienteRepository;
+    private pacienteRepository pacienteRepository;
 
     public List<Paciente> findAll() {
         return pacienteRepository.findAll();
